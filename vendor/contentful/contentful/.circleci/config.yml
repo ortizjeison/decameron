@@ -1,0 +1,104 @@
+orbs:
+  gh-pages: sugarshin/gh-pages@0.0.6
+
+version: 2.1
+
+workflows:
+  version: 2
+  
+  main:
+    jobs:
+      - lint
+      - test72
+      - test73
+      - test74
+      - test80
+      - docs_build:
+          requires:
+            - lint
+            - test72
+            - test73
+            - test74
+          filters:
+            branches:
+              only: master
+
+
+jobs:
+  lint:
+    docker:
+      - image: circleci/php:7.4-cli
+    steps:
+      - checkout
+      - run: { name: "Install dependencies", command: sudo composer self-update && composer install -n --prefer-dist }
+      - run:
+          name: Syntax tests
+          command: |
+            wget http://cs.sensiolabs.org/download/php-cs-fixer-v2.phar -q -O php-cs-fixer.phar
+            composer run lint-syntax
+      - run:
+          name: Static analysis
+          command: |
+            wget https://github.com/phpstan/phpstan/releases/download/0.10.3/phpstan.phar -q -O phpstan.phar
+            composer run lint-static-analysis
+
+  test72:
+    environment:
+      CC_TEST_REPORTER_ID: 3e327765f90cbf31f2ce055b1506d4e754fcd766395dca015fa87cc7f7cc469f
+      XDEBUG_MODE: coverage
+    docker:
+      - image: circleci/php:7.2-cli
+    steps:
+      - checkout
+      - run:
+          name: Set up Code Climate test-reporter
+          command: |
+            curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+            chmod +x ./cc-test-reporter
+      - run: { name: "Install dependencies", command: "sudo composer self-update && composer install -n --prefer-dist" }
+      - run:
+          name: Test suite
+          command: |
+            sudo docker-php-ext-enable xdebug
+            ./cc-test-reporter before-build
+            composer test-quick-fail
+            ./cc-test-reporter after-build --coverage-input-type clover --exit-code $?
+
+  test73:
+    docker:
+      - image: circleci/php:7.3-cli
+    steps:
+      - checkout
+      - run: { name: "Install dependencies", command: "sudo composer self-update && composer install -n --prefer-dist" }
+      - run: { name: "Test suite", command: "composer test-quick-fail" }
+
+  test74:
+    docker:
+      - image: circleci/php:7.4-cli
+    steps:
+      - checkout
+      - run: { name: "Install dependencies", command: "sudo composer self-update && composer install -n --prefer-dist" }
+      - run: { name: "Test suite", command: "composer test-quick-fail" }
+
+  test80:
+    docker:
+      - image: circleci/php:8.0-cli
+    steps:
+      - checkout
+      # we ignore the php8 platform reqs for now, since php-vcr is not updated for php8, but works
+      # as this is only used for unit tests, running with it should be fine for now
+      - run: { name: "Install dependencies", command: "sudo composer self-update && composer install -n --prefer-dist --ignore-platform-reqs" }
+      - run: { name: "Test suite", command: "composer test-quick-fail" }
+ 
+        
+  docs_build:
+    environment:
+      TRAVIS_REPO_SLUG: contentful/contentful.php
+    docker:
+      - image: circleci/php:7.2-cli
+    steps:
+      - checkout
+      - run: {name: "Make docs", command: "sh ./scripts/prepare-docs.sh" }
+      - gh-pages/deploy:
+          build-dir: build/docs
+          ssh-fingerprints: 7b:3b:4d:ee:f1:4d:45:db:8f:51:d6:78:32:fb:12:b2
