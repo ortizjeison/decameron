@@ -302,3 +302,76 @@ fatal: unable to auto-detect email address (got 'root@lubuntu20.(none)')
 > git remote --verbose
 > git config --get commit.template
 > git add -A -- /var/www/html/decameron/~/.vscode-root/User/globalStorage/state.vscdb /var/www/html/decameron/~/.vscode-root/User/workspaceStorage/d2a647edd43414abdbd9bfba6db2ea6f/state.vscdb /var/www/html/decameron/~/.vscode-root/logs/20210807T142007/exthost1/exthost.log /var/www/html/decameron/~/.vscode-root/logs/20210807T142007/exthost1/output_logging_20210807T142022/2-Git.log /var/www/html/decameron/~/.vscode-root/storage.json
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git ls-files --stage -- /var/www/html/decameron/test.php
+> git cat-file -s a823ca67259c9c4e68d7726f854df06be1106279
+> git show --textconv :test.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git commit --quiet --allow-empty-message --file -
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git config --get commit.template
+> git ls-files --stage -- /var/www/html/decameron/test.php
+> git cat-file -s a823ca67259c9c4e68d7726f854df06be1106279
+> git show --textconv :test.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git push origin main:main
+Missing or invalid credentials.
+Error: socket hang up
+    at connResetException (internal/errors.js:570:14)
+    at Socket.socketOnEnd (_http_client.js:440:23)
+    at Socket.emit (events.js:228:7)
+    at endReadableNT (_stream_readable.js:1185:12)
+    at processTicksAndRejections (internal/process/task_queues.js:81:21) {
+  code: 'ECONNRESET'
+}
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/ortizjeison/decameron.git/'
+> git push origin main:main
+Missing or invalid credentials.
+Error: socket hang up
+    at connResetException (internal/errors.js:570:14)
+    at Socket.socketOnEnd (_http_client.js:440:23)
+    at Socket.emit (events.js:228:7)
+    at endReadableNT (_stream_readable.js:1185:12)
+    at processTicksAndRejections (internal/process/task_queues.js:81:21) {
+  code: 'ECONNRESET'
+}
+Missing or invalid credentials.
+Error: socket hang up
+    at connResetException (internal/errors.js:570:14)
+    at Socket.socketOnEnd (_http_client.js:440:23)
+    at Socket.emit (events.js:228:7)
+    at endReadableNT (_stream_readable.js:1185:12)
+    at processTicksAndRejections (internal/process/task_queues.js:81:21) {
+  code: 'ECONNRESET'
+}
+remote: No anonymous write access.
+fatal: Authentication failed for 'https://github.com/ortizjeison/decameron.git/'
