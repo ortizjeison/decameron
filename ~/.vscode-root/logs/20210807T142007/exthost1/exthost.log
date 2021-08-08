@@ -73,3 +73,7 @@
 [2021-08-07 14:43:30.083] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 940
 [2021-08-08 10:19:06.918] [exthost] [info] ExtensionService#_doActivateExtension michelemelluso.gitignore {"startup":false,"extensionId":{"value":"michelemelluso.gitignore","_lower":"michelemelluso.gitignore"},"activationEvent":"*"}
 [2021-08-08 10:19:06.919] [exthost] [info] ExtensionService#loadCommonJSModule file:///root/.vscode/extensions/michelemelluso.gitignore-1.0.1/out/src/extension
+[2021-08-08 10:43:54.428] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features {"startup":false,"extensionId":{"value":"vscode.typescript-language-features","_lower":"vscode.typescript-language-features"},"activationEvent":"onLanguage:javascript"}
+[2021-08-08 10:43:54.428] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/code/resources/app/extensions/typescript-language-features/dist/extension
+[2021-08-08 10:43:57.170] [exthost] [info] ExtensionService#_doActivateExtension HookyQR.beautify {"startup":false,"extensionId":{"value":"HookyQR.beautify","_lower":"hookyqr.beautify"},"activationEvent":"*"}
+[2021-08-08 10:43:57.171] [exthost] [info] ExtensionService#loadCommonJSModule file:///root/.vscode/extensions/hookyqr.beautify-1.5.0/extension
