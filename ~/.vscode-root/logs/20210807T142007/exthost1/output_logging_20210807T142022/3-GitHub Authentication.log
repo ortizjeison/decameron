@@ -1,2 +1,7 @@
 [Error  - 19:20:22.977] Getting token failed: Error: Unknown or unsupported transport “disabled” for address “disabled:”
 [Info  - 19:43:58.945] Logging in...
+[Info  - 17:38:15.799] Treating input as token
+[Info  - 17:38:15.804] Getting user info...
+[Info  - 17:38:16.316] Got account info!
+[Error  - 17:38:16.369] Setting token failed: Error: Unknown or unsupported transport “disabled” for address “disabled:”
+[Info  - 17:38:23.802] Login success!

@@ -10,6 +10,7 @@ include("includes/top_nav.php");
 #Creamos la conexión a Contentful
 $client = new \Contentful\Delivery\Client('LxFo-33yjCtikr2f6uDVEgDab7vQNjmpO2cpQb9Azhk', 'zdo3yvufu0j6', 'master');
 
+// PLANES
 //Le indicamos la entidad que vamos a consultar
 $query = new \Contentful\Delivery\Query();
 $query->setContentType('plan');
@@ -20,16 +21,28 @@ $Planes = $client->getEntries($query);
 //Las recorremos todas
 foreach ($Planes as $plan) {
 
-    //Extraemos la propiedad que queramos de ellas
-    echo("Plan: ".$plan['name'].":");
-    echo("<br>");
- 
-    //Recorremos el array de las fotos y mostramos una a una
-    foreach($plan['photos'] as $photo){
-        echo($photo);
-        echo("<br>");
-    }
-    echo("<br>");
+    echo('<div class="card" style="width: 18rem;">');
+    echo('<img class="card-img-top" src="'.$plan['photos']['photo1'].'" alt="Card image cap">');
+    echo('<h5 class="card-title">'.$plan['name'].'</h5>');
+    echo('<p class="card-text">'.$plan['description'].'</p>');
+    echo('</div>');
+}
+
+// HABITACIONES
+
+$query = new \Contentful\Delivery\Query();
+$query->setContentType('room');
+
+//Las recibimos
+$Rooms = $client->getEntries($query);
+
+//Las recorremos todas
+foreach ($Rooms as $room) {
+    echo('<div class="card" style="width: 18rem;">');
+    echo('<img class="card-img-top" src="'.$room['photos']['photo1'].'" alt="Card image cap">');
+    echo('<h5 class="card-title">'.$room['name'].'</h5>');
+    echo('<p class="card-text">'.$room['description'].'</p>');
+    echo('</div>');
 }
 
 ?>
