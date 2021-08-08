@@ -12,7 +12,12 @@ $query->setContentType('plan');
 $Plan = $client->getEntries($query);
 
 foreach ($Plan as $plan) {
-    print_r($plan['photos']);
+
+    foreach($Photo as $p){
+        echo($plan['photos'][$p]);
+    }
+    //print_r($plan['photos']);
+
 }
 
 ?>
