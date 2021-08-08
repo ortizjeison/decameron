@@ -1462,8 +1462,8 @@
             "folder": "file:///var/www/html/decameron",
             "backupPath": "/var/www/html/decameron/~/.vscode-root/Backups/4a082ead1651ac887afdcede6bdf690d",
             "uiState": {
-                "mode": 1,
-                "x": 574,
+                "mode": 0,
+                "x": 277,
                 "y": 30,
                 "width": 1024,
                 "height": 750
