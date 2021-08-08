@@ -1,12 +1,13 @@
+<?php
+require_once 'vendor/autoload.php';
+include("includes/top_nav.php");
+?>
+
 <body>
 
-</body>
-
 <?php
-include("includes/top_nav.php");
 
-require_once 'vendor/autoload.php';
-
+#Creamos la conexión a Contentful
 $client = new \Contentful\Delivery\Client('LxFo-33yjCtikr2f6uDVEgDab7vQNjmpO2cpQb9Azhk', 'zdo3yvufu0j6', 'master');
 
 //Le indicamos la entidad que vamos a consultar
@@ -32,3 +33,5 @@ foreach ($Planes as $plan) {
 }
 
 ?>
+
+</body>

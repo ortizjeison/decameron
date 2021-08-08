@@ -1169,3 +1169,153 @@ fatal: Authentication failed for 'https://github.com/ortizjeison/decameron.git/'
 > git for-each-ref --sort -committerdate --format %(refname) %(objectname)
 > git remote --verbose
 > git config --get commit.template
+> git status -z -u
+> git ls-files --stage -- /var/www/html/decameron/includes/top_nav.php
+> git symbolic-ref --short HEAD
+> git cat-file -s f9e368596a6e72eedb99915d28e79f20c6e59a10
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git show --textconv :includes/top_nav.php
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :includes/top_nav.php
+> git ls-files --stage -- /var/www/html/decameron/includes/top_nav.php
+> git cat-file -s f9e368596a6e72eedb99915d28e79f20c6e59a10
+> git show --textconv :index.php
+> git ls-files --stage -- /var/www/html/decameron/index.php
+> git cat-file -s fd18d6adaa3c46f13f04923a37db4d49d26ec173
+> git show --textconv :test.php
+> git ls-files --stage -- /var/www/html/decameron/test.php
+> git cat-file -s eb86ac1b2498936966a4afbc887ec3b0ea21a390
+> git show --textconv :includes/top_nav.php
+> git ls-files --stage -- /var/www/html/decameron/includes/top_nav.php
+> git cat-file -s f9e368596a6e72eedb99915d28e79f20c6e59a10
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :index.php
+> git ls-files --stage -- /var/www/html/decameron/index.php
+> git cat-file -s fd18d6adaa3c46f13f04923a37db4d49d26ec173
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :includes/top_nav.php
+> git ls-files --stage -- /var/www/html/decameron/includes/top_nav.php
+> git cat-file -s f9e368596a6e72eedb99915d28e79f20c6e59a10
+> git show --textconv :index.php
+> git ls-files --stage -- /var/www/html/decameron/index.php
+> git cat-file -s fd18d6adaa3c46f13f04923a37db4d49d26ec173
+> git show --textconv :test.php
+> git ls-files --stage -- /var/www/html/decameron/test.php
+> git cat-file -s eb86ac1b2498936966a4afbc887ec3b0ea21a390
+> git show --textconv :index.php
+> git ls-files --stage -- /var/www/html/decameron/index.php
+> git cat-file -s fd18d6adaa3c46f13f04923a37db4d49d26ec173
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template

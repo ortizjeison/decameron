@@ -8,7 +8,7 @@
 	<head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Koala T-Shirt</title>
+        <title>Decameron</title>
         <link href="https://fonts.googleapis.com/css?family=Libre+Franklin%7COpen+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
