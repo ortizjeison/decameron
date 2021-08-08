@@ -480,3 +480,37 @@ fatal: Authentication failed for 'https://github.com/ortizjeison/decameron.git/'
 > git for-each-ref --sort -committerdate --format %(refname) %(objectname)
 > git remote --verbose
 > git config --get commit.template
+> git status -z -u
+> git ls-files --stage -- /var/www/html/decameron/test.php
+> git symbolic-ref --short HEAD
+> git cat-file -s 22ad0b97c5728144c58ec3e2310c29aeb7416c80
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git show --textconv :test.php
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :index.php
+> git ls-files --stage -- /var/www/html/decameron/index.php
+> git cat-file -s 591d0140f3c8c7893bb07886e873b4e156105cf2
+> git show --textconv :test.php
+> git ls-files --stage -- /var/www/html/decameron/test.php
+> git cat-file -s 22ad0b97c5728144c58ec3e2310c29aeb7416c80
+> git show --textconv :index.php
+> git ls-files --stage -- /var/www/html/decameron/index.php
+> git cat-file -s 591d0140f3c8c7893bb07886e873b4e156105cf2
+> git show --textconv :test.php
+> git ls-files --stage -- /var/www/html/decameron/test.php
+> git cat-file -s 22ad0b97c5728144c58ec3e2310c29aeb7416c80
+> git show --textconv :index.php
+> git ls-files --stage -- /var/www/html/decameron/index.php
+> git cat-file -s 591d0140f3c8c7893bb07886e873b4e156105cf2
