@@ -6,8 +6,13 @@ $client = new \Contentful\Delivery\Client('LxFo-33yjCtikr2f6uDVEgDab7vQNjmpO2cpQ
 //$entry = $client->getEntry('1Wdl56SY9aUh9LEntmmUnt');
 //echo $entry->getName();
 
+$query = new \Contentful\Delivery\Query();
+$query->setContentType('plan');
+
+$Plan = $client->getEntries($query);
+
 foreach ($Plan as $plan) {
-    echo $plan['photos'];
+    print_r($plan['photos']);
 }
 
 ?>
