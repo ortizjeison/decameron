@@ -453,3 +453,30 @@ fatal: Authentication failed for 'https://github.com/ortizjeison/decameron.git/'
 > git for-each-ref --sort -committerdate --format %(refname) %(objectname)
 > git remote --verbose
 > git config --get commit.template
+> git status -z -u
+> git ls-files --stage -- /var/www/html/decameron/test.php
+> git cat-file -s 752e6fe2b77337546cb6eff4c042c68d1182d9bd
+> git show --textconv :test.php
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
