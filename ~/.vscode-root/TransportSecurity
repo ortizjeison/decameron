@@ -4,5 +4,23 @@
       "mode": "force-https",
       "sts_include_subdomains": false,
       "sts_observed": 1628364038.264815
+   },
+   "bvX4PpTCW5oYCQv3FySIixdkmM+paN/l+o4e/8K1m3o=": {
+      "expiry": 1659971948.893697,
+      "mode": "force-https",
+      "sts_include_subdomains": true,
+      "sts_observed": 1628435948.8937
+   },
+   "jbPegeLuooUbG+v0vYib08dD4CNuhrMZaUmGOirUmGE=": {
+      "expiry": 1659971931.501471,
+      "mode": "force-https",
+      "sts_include_subdomains": true,
+      "sts_observed": 1628435931.501482
+   },
+   "vkT5Iu2MBjkSeyVZiXgdWeIQtLRfiklhG+KjVuDkDig=": {
+      "expiry": 1659971946.816058,
+      "mode": "force-https",
+      "sts_include_subdomains": true,
+      "sts_observed": 1628435946.81606
    }
 }

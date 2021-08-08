@@ -647,3 +647,64 @@ fatal: Authentication failed for 'https://github.com/ortizjeison/decameron.git/'
 > git remote --verbose
 > git config --get commit.template
 > git check-ignore -v -z --stdin
+> git status -z -u
+> git ls-files --stage -- /var/www/html/decameron/vscode.gitignore
+> git symbolic-ref --short HEAD
+> git cat-file -s 8887b3e9103e88e5b21b9f5aae06bd9b5f37719e
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git show --textconv :vscode.gitignore
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n21 -- /var/www/html/decameron/vscode.gitignore
+> git check-ignore -v -z --stdin
+> git show --textconv :index.php
+> git ls-files --stage -- /var/www/html/decameron/index.php
+> git cat-file -s c28840cb3faf62d715dc550e5d5b942b3cda7f70
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git check-ignore -v -z --stdin
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git check-ignore -v -z --stdin
+> git show --textconv :.gitignore
+> git ls-files --stage -- /var/www/html/decameron/.gitignore
+> git show --textconv :test.php
+> git ls-files --stage -- /var/www/html/decameron/test.php
+> git cat-file -s eb86ac1b2498936966a4afbc887ec3b0ea21a390
+> git show --textconv :vscode.gitignore
+> git ls-files --stage -- /var/www/html/decameron/vscode.gitignore
+> git cat-file -s 8887b3e9103e88e5b21b9f5aae06bd9b5f37719e

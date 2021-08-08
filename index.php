@@ -16,6 +16,8 @@ foreach ($Plan as $plan) {
     foreach($Photo as $p){
         echo($plan['photos'][$p]);
     }
+
+    hola
     //print_r($plan['photos']);
 
 }
