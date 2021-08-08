@@ -13,13 +13,15 @@ $Plan = $client->getEntries($query);
 
 foreach ($Plan as $plan) {
 
-    foreach($Photo as $p){
-        echo($plan['photos'][$p]);
+    echo("Plan: ".$plan['name'].":");
+    echo("<br>");
+ 
+    
+    foreach($plan['photos'] as $p){
+        echo($p);
+        echo("<br>");
     }
-
-    hola
-    //print_r($plan['photos']);
-
+    echo("<br>");
 }
 
 ?>
