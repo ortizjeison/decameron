@@ -2021,3 +2021,66 @@ Use -f if you really want to add them.
 > git for-each-ref --sort -committerdate --format %(refname) %(objectname)
 > git remote --verbose
 > git config --get commit.template
+> git status -z -u
+> git ls-files --stage -- /var/www/html/decameron/index.php
+> git symbolic-ref --short HEAD
+> git cat-file -s 1e53076cb1e2e9aafcb39324bf29c4cf85dfc98b
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git show --textconv :index.php
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git status -z -u
+> git ls-files --stage -- /var/www/html/decameron/index.php
+> git symbolic-ref --short HEAD
+> git cat-file -s 1e53076cb1e2e9aafcb39324bf29c4cf85dfc98b
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git show --textconv :index.php
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+git.stage 1
+git.stage.scmResources 1
+> git add -A -- /var/www/html/decameron/~/.vscode-root/Cache/cbc42e4c979f69f0_0
+The following paths are ignored by one of your .gitignore files:
+~/.vscode-root
+Use -f if you really want to add them.
+> git ls-files --stage -- /var/www/html/decameron/index.php
+> git cat-file -s 1e53076cb1e2e9aafcb39324bf29c4cf85dfc98b
+> git show --textconv :index.php
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :includes/top_nav.php
+> git ls-files --stage -- /var/www/html/decameron/includes/top_nav.php
+> git cat-file -s 6b7c7a877ad2e32fb43142f9507bcacb1508029d
+> git show --textconv :index.php
+> git ls-files --stage -- /var/www/html/decameron/index.php
+> git cat-file -s 1e53076cb1e2e9aafcb39324bf29c4cf85dfc98b
+> git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%B -z -n21 -- /var/www/html/decameron/index.php
+> git check-ignore -v -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse main
+> git rev-parse --symbolic-full-name main@{u}
+> git rev-list --left-right main...refs/remotes/origin/main
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname)
+> git remote --verbose
+> git config --get commit.template

@@ -49,8 +49,6 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "fsPath": "/var/www/html/decameron",
-                                        "external": "file:///var/www/html/decameron",
                                         "path": "/var/www/html/decameron",
                                         "scheme": "file"
                                     },
@@ -177,7 +175,7 @@
                     },
                     {
                         "id": "workbench.action.closeFolder",
-                        "label": "Close &&Folder"
+                        "label": "Close &&Workspace"
                     },
                     {
                         "id": "workbench.action.closeWindow",
@@ -1458,12 +1456,15 @@
     "themeBackground": "#1e1e1e",
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///var/www/html/decameron",
-            "backupPath": "/var/www/html/decameron/~/.vscode-root/Backups/4a082ead1651ac887afdcede6bdf690d",
+            "workspaceIdentifier": {
+                "id": "3ce35c690bdd85881a4ca3075ff0db44",
+                "configURIPath": "file:///var/www/html/decameron/~/.vscode-root/Workspaces/1628469697295/workspace.json"
+            },
+            "backupPath": "/var/www/html/decameron/~/.vscode-root/Backups/3ce35c690bdd85881a4ca3075ff0db44",
             "uiState": {
                 "mode": 0,
-                "x": 277,
-                "y": 30,
+                "x": 341,
+                "y": 62,
                 "width": 1024,
                 "height": 750
             }
