@@ -17,14 +17,14 @@ $query->setContentType('plan');
 $Planes = $client->getEntries($query);
 
 //Las recorremos todas
-foreach ($Planes as $plan) {
+/*foreach ($Planes as $plan) {
 
     echo('<div class="card" style="width: 18rem;">');
     echo('<img class="card-img-top" src="'.$plan['photos']['photo1'].'" alt="Card image cap">');
     echo('<h5 class="card-title">'.$plan['name'].'</h5>');
     echo('<p class="card-text">'.$plan['description'].'</p>');
     echo('</div>');
-}
+}*/
 
 // HABITACIONES
 
@@ -35,13 +35,13 @@ $query->setContentType('room');
 $Rooms = $client->getEntries($query);
 
 //Las recorremos todas
-foreach ($Rooms as $room) {
+/*foreach ($Rooms as $room) {
     echo('<div class="card" style="width: 18rem;">');
     echo('<img class="card-img-top" src="'.$room['photos']['photo1'].'" alt="Card image cap">');
     echo('<h5 class="card-title">'.$room['name'].'</h5>');
     echo('<p class="card-text">'.$room['description'].'</p>');
     echo('</div>');
-}
+}*/
 
 ?>
 
