@@ -1,14 +1,12 @@
 <?php
 require_once 'vendor/autoload.php';
 include("includes/top_nav.php");
+include("includes/connection.php");
 ?>
 
 <body>
 
 <?php
-
-#Creamos la conexión a Contentful
-$client = new \Contentful\Delivery\Client('LxFo-33yjCtikr2f6uDVEgDab7vQNjmpO2cpQb9Azhk', 'zdo3yvufu0j6', 'master');
 
 // PLANES
 //Le indicamos la entidad que vamos a consultar
