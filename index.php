@@ -17,10 +17,14 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
 
-        <!--Poner el tag y que tales -->
     </head>
 
     <body id="page-top">
+
+            <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M4RJSK6"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
         <?php
 
         include("requires.php");
