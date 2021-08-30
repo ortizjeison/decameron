@@ -6,6 +6,7 @@ let mysql = require('mysql');
 app.use(cors());
 app.use(express.json());
 
+//Port config
 const port = 8080;
 app.listen(port, () => {
     console.log(`Corriendo en el puerto: ${port}`)
