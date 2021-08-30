@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
         - name: testing-kube-container
-          image: "<add-your-repo-uri>"
+          image: "993648102853.dkr.ecr.us-east-1.amazonaws.com/mireg:latest"
           imagePullPolicy: Always
           resources:
             limits:
