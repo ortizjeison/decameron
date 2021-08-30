@@ -41,6 +41,10 @@ app.get('/GetOrders', (req, res) => {
     });
 });
 
+app.get('/healthcheck', (req,res)=>{
+    res.send({status:'working'})
+});
+
 app.post('/PostOrder', (req, res) => {
     conn.query('INSERT INTO platillo_compra (usuarioID, platilloID, fecha) VALUES (?, ?, ?);', [req.query['usuarioID'], req.query['platilloID'], req.query['fecha']],
         function(err, result) {
