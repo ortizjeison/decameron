@@ -1,16 +1,20 @@
-const express = require('express');
-const cors = require('cors');
-const app = express();
 let mysql = require('mysql');
+const express = require('express')
+const cors = require('cors')
 
-app.use(cors());
-app.use(json);
-app.use(express.json());
+const path = require('path');
 
-const port = 8080;
-app.listen(port, () => {
-    console.log(`Corriendo en el puerto: ${port}`)
-});
+const { json, urlencoded } = express
+const app = express()
+
+const host = process.env.IP || '0.0.0.0'
+const port = process.env.PORT || 3000
+
+app.use(json())
+app.use(urlencoded({ extended: false }))
+
+const corsOptions = { origin: '*', optionsSuccessStatus: 200 }
+app.use(cors(corsOptions))
 
 
 let conn = mysql.createConnection({
@@ -27,7 +31,6 @@ connectBD => {
     });
     return conn;
 }
-
 
 app.get('/GetOrders', (req, res) => {
     conn.query('SELECT * FROM platillo_compra', function(err, result) {
@@ -46,3 +49,8 @@ app.post('/PostOrder', (req, res) => {
 
     res.sendStatus(200);
 });
+
+//app.use('/home', (req, res) =>  { res.sendFile(path.join(__dirname + '/src/html/index.html')); })
+//app.use('/', (req, res) => { res.send(`I Love Docker & Kubernetes & NodeJs`); })
+
+app.listen(port, host, () => { console.log(`Server listening on port ${port} in the host ${host}`); })
